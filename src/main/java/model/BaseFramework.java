@@ -1,6 +1,8 @@
+package model;
+
+import model.arquivo.Arquivo;
 import lombok.Getter;
 import lombok.Setter;
-import model.arquivo.Arquivo;
 
 import java.io.IOException;
 
@@ -13,7 +15,7 @@ public class BaseFramework {
     protected String nomeProjeto;
 
     /**
-     * Joga o script para uma saida, seja terminal ou model.arquivo texto
+     * Joga o script para uma saida, seja terminal ou model.model.arquivo texto
      *
      * @param saida - Tipo de saida: - T ~> Terminal - A ~> Arquivo
      */

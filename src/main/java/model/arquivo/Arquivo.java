@@ -1,4 +1,4 @@
-package arquivo;
+package model.arquivo;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -9,7 +9,7 @@ public class Arquivo {
     private BufferedWriter escritor;
 
     /**
-     * Escreve texto em model.arquivo
+     * Escreve texto em model.model.arquivo
      *
      * @param texto
      * @throws java.io.IOException
@@ -33,12 +33,12 @@ public class Arquivo {
     /**
      * Construtor
      *
-     * @param nome     - Nome do model.arquivo
-     * @param extensao - Extensao do model.arquivo
+     * @param nome     - Nome do model.model.arquivo
+     * @param extensao - Extensao do model.model.arquivo
      * @throws java.io.IOException
      */
     public Arquivo(String nome, String extensao) throws IOException {
-        this.fw = new FileWriter("model/arquivo/" + nome + extensao);
+        this.fw = new FileWriter("model/model.arquivo/" + nome + extensao);
         this.escritor = new BufferedWriter(this.fw);
     }
 }
