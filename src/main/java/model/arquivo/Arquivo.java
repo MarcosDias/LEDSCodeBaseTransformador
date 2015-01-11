@@ -9,7 +9,7 @@ public class Arquivo {
     private BufferedWriter escritor;
 
     /**
-     * Escreve texto em model.model.arquivo
+     * Escreve texto em arquivo
      *
      * @param texto
      * @throws java.io.IOException
@@ -38,7 +38,7 @@ public class Arquivo {
      * @throws java.io.IOException
      */
     public Arquivo(String nome, String extensao) throws IOException {
-        this.fw = new FileWriter("model/model.arquivo/" + nome + extensao);
+        this.fw = new FileWriter("arquivo/" + nome + extensao);
         this.escritor = new BufferedWriter(this.fw);
     }
 }
